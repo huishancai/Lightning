@@ -10,7 +10,7 @@ void setup()
 }
 void draw()
 {
-  strokeWeight(4);
+  strokeWeight(3);
   //cloud
   stroke(255,255,255);
   fill(255,255,255);
@@ -20,7 +20,7 @@ void draw()
   ellipse(225,-20,75,75);
   //lightning
   float b = (int)(Math.random()*65)+190;
-  stroke(255,b,50);
+  stroke(145,b,242);
   while(endY<300) {
     endX = startX + (((int)(Math.random()*19))-9);
     endY = startY + (int)(Math.random()*10);
