@@ -30,8 +30,23 @@ void draw()
   }
   //peppa's home
   strokeWeight(1);
+    //roof
+  stroke(210,180,140);
+  fill(255,179,71);
+  beginShape();
+  vertex(162.5,190);
+  vertex(122.5,225);
+  vertex(110,225);
+  vertex(147.5,190);
+  endShape();
+      //vertical lines
+  line(150.5,190,113.5,225);
+  line(154.5,190,117.5,225);
+  line(158.5,190,121.5,225);
+      //horizontal lines
+  line(162.5,200,147.5,200);
+  line(162.5,210,147.5,210);
     //layout
-  stroke(210, 180, 140);
   fill(241,235,156);
   rect(125,225,75,75);
   rect(110,225,15,75);
@@ -61,7 +76,6 @@ void draw()
   rect(175,265,10,15);
   line(180,265,180,280);
   line(175,272.5,185, 272.5);
-  
 }
 void mousePressed()
 {
@@ -70,3 +84,4 @@ void mousePressed()
   endX = 150;
   endY = 0;
 }
+
